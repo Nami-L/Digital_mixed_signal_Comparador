@@ -5,6 +5,8 @@ real p;
 real n;
 real c;
 
+
+bit c_int;
 real r_p;
 real r_n;
 //intanciar el dut
@@ -14,6 +16,7 @@ comparador_dms dut (
     .n_i(n),
     .c_o(c)
 );
+assign c_int = c > 0.5 ? 1 : 0;
 
 initial begin
     for (int i =0 ; i < 10; i++)begin
