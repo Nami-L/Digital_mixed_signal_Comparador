@@ -26,8 +26,8 @@ module tb;
       n   = r_n / 100.0;
       #10
 
-      if (p > n) $display("Tiempo: %t |  A= %0.2f es mayor que B= %0.2f ", $time, p, n);
-      else $display("Tiempo: %t |  A= %0.2f es menor que B= %0.2f ", $time, p, n);
+      if (p > n) $display("Tiempo: %t |  A= %0.2f es mayor que B= %0.2f  | la salida es C_rtl= %0.2f y C_golde = %0.2f  ", $time, p, n,c,c_int);
+      else $display("Tiempo: %t |  A= %0.2f es menor que B= %0.2f| la salida es C_rtl= %0.2f y C_golde = %0.2f  ", $time, p, n,c,c_int);
 
     end
     $finish;
