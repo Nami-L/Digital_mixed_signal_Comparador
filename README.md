@@ -11,3 +11,9 @@
 
 
 Este proyecto fue simulado utilizando las herramientas de Synopsys.
+
+### Colocar en el bash lo siguiente
+- setenv GIT_ROOT `git rev-parse --show-toplevel`
+- setenv UVM_WORK $GIT_ROOT/work/uvm
+- mkdir -p $UVM_WORK && cd $UVM_WORK
+- ln -sf $GIT_ROOT/hw/Makefile/Makefile.vcs Makefile
